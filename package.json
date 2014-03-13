@@ -1,8 +1,7 @@
 {
-  "name": "gallery-image",
+  "name": "agile-grenoble-website",
   "version": "0.0.0",
   "description": "",
-  "main": "index.js",
   "directories": {
     "test": "test"
   },
