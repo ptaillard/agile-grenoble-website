@@ -1,16 +1,10 @@
-'use strict';
-
-angular.module('agileGrenobleWebsiteApp', [
-  'ngResource',
-  'ngRoute'
-])
-  .config(function ($routeProvider) {
-    $routeProvider
-      .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
-      })
-      .otherwise({
-        redirectTo: '/'
-      });
-  });
+angular.module('agilegrenoble', ['stellar.directives'])
+    .controller('stellarCtrl', function($scope, stellar) {
+        // The first step is to run .stellar() against the element:
+        stellar.against(window);
+        // ,
+        // stellar.window();
+        // or
+        // stellar.against('body, .planet, .sun');
+    })
+;

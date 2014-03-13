@@ -1,5 +1,3 @@
-"use strict";
-
 module.exports = function(grunt) {
 
   // Project configuration.
@@ -12,7 +10,7 @@ module.exports = function(grunt) {
       },
       dist: {
         // the files to concatenate
-        src: ['src/scripts/**/*.js'],
+        src: ['src/scripts/directives/*.js', 'src/scripts/*.js', 'src/scripts/controllers/*.js'],
         // the location of the resulting JS file
         dest: 'app/scripts/<%= pkg.name %>.js'
       }
@@ -38,7 +36,7 @@ module.exports = function(grunt) {
       // configure JSHint (documented at http://www.jshint.com/docs/)
       options: {
           // more options here if you want to override JSHint defaults
-        "globalstrict" : true,
+        //"globalstrict" : true,
         globals: {
           jQuery: true,
           console: true,
