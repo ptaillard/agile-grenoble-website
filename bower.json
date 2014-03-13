@@ -1,0 +1,18 @@
+{
+  "name": "agile-grenoble-website",
+  "version": "0.0.0",
+  "homepage": "https://github.com/ptaillard/agile-grenoble-website",
+  "authors": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.14"
+  }
+}
