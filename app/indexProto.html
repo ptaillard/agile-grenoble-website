@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible" />
+    <title>Agile Grenoble</title>
+    <link rel="stylesheet" type="text/css" href="styles/scroll.css" />
+</head>
+<body id="skrollr-body">
+
+
+    <div class="page" id="accueil"
+        data-start="top:40%;"
+        data-500-start="top:0%;"
+    >
+        <div style="font-size:2em" data-start=" transform: scale(1.0); opacity:1;"
+            data-500-start="opacity:0; transform: scale(0.25);">
+            <h1>Bienvenue sur le site d'Agile Grenoble</h1>
+            <h2>Réconcilions efficacité et plaisir au travail</h2>
+        </div>
+    </div>
+
+    <div class="page" id="sponsors"
+          data-top="opacity:1.0; "
+          data-80p-top="opacity:0.2; "
+    >
+        <div class="content">
+          <h2>Nos Sponsors!!!</h2>
+          <div class="speaker-teaser">
+            <img src="images/homer.jpeg" height="200">
+            <img src="images/barack.jpeg" height="200">
+            <img src="images/justinbieber.jpeg" height="200">
+          </div>
+        </div>
+    </div>
+
+    <div class="page" id="orateurs"
+          data-top="opacity:1.0; "
+          data-80p-top="opacity:0.2; "
+    >
+        <div class="content">
+          <h2>Keynotes!</h2>
+          <div class="keynote-teaser" >
+            <img src="https://pbs.twimg.com/profile_images/1860391237/fbeauregard.png" height="300" title="François Beauregard"> </img>
+            <img src="https://pbs.twimg.com/profile_images/1734100582/Alexandre_GERARD.jpg" height="300" title="Alexandre Gerard">
+          </div>
+        </div>
+    </div>
+
+    <div class="page" id="programme"
+          data-top="opacity:1.0; "
+          data-80p-top="opacity:0.2; "
+    >
+        <div class="content">
+        INFOS PROGRAMME
+        </div>
+    </div>
+
+  <img data-start="left:10px; top:10px; height:180px; width:300px;" data-500-start="top:0px; left:30px; height:80px; width:140px;" class="logo" src="./images/LOGO4.JPG" border=0 alt="logo">
+  <div id="slideNav" style="display: block;">
+    <ul>
+      <li>
+          <a href="#programme">Programme</a>
+      </li>
+      <li>
+          <a href="#orateurs">Orateurs</a>
+      </li>
+      <li>
+          <a href="#sponsors">Sponsors</a>
+      </li>
+      <li>
+        <a href="#accueil">Accueil</a>
+      </li>
+    </ul>
+  </div>
+
+    <script src="bower_components/bower-skrollr/skrollr.min.js"></script>
+    <script src="bower_components/skrollr-menu/dist/skrollr.menu.min.js"></script>
+    <script>
+        // Start Skrollr
+      window.onload = function() {
+        var s = skrollr.init(
+        {
+          forceHeight: false,
+          smoothScrolling:true,
+          render: function(data) {              
+            //Debugging - Log the current scroll position.
+            //console.log(data.curTop);
+          }/*,
+          mobileCheck: function() {
+            return false;
+          }*/
+        });
+
+
+        skrollr.menu.init(s, {
+          //skrollr will smoothly animate to the new position using `animateTo`.
+          animate: true,
+
+          //The easing function to use.
+          easing: 'sqrt',
+
+          //Multiply your data-[offset] values so they match those set in skrollr.init
+          scale: 2,
+
+          //How long the animation should take in ms.
+          duration: function(currentTop, targetTop) {
+              //By default, the duration is hardcoded at 500ms.
+              return 500;
+
+              //But you could calculate a value based on the current scroll position (`currentTop`) and the target scroll position (`targetTop`).
+              //return Math.abs(currentTop - targetTop) * 10;
+          }
+        });
+      }
+    </script>
+
+</body>
+</html>
