@@ -19,7 +19,9 @@
     "angular-resource": "~1.2.14",
     "angular-bootstrap": "~0.10.0",
     "jquery": "~2.1.0",
-    "jquery.stellar": "~0.6.2",
-    "angular-route": "~1.2.14"
+    "angular-route": "~1.2.14",
+    "bower-skrollr": "~0.6.21",
+    "skrollr-menu": "~0.1.11",
+    "jquery-waypoints": "~2.0.4"
   }
 }
