@@ -1,20 +1,21 @@
-describe('Controller: MainCtrl', function () {
+describe('Controller: ModalConnexionCtrl', function () {
 
   // load the controller's module
-  beforeEach(module('agileGrenobleWebsiteApp'));
+  beforeEach(module('agileGrenobleApp'));
 
-  var MainCtrl,
+  var ModalConnexionCtrl,
     scope;
 
   // Initialize the controller and a mock scope
   beforeEach(inject(function ($controller, $rootScope) {
     scope = $rootScope.$new();
-    MainCtrl = $controller('MainCtrl', {
+    ModalConnexionCtrl = $controller('ModalConnexionCtrl', {
       $scope: scope
     });
   }));
 
-  it('should attach a list of awesomeThings to the scope', function () {
-    expect(scope.awesomeThings.length).toBe(3);
+  it('should display current select item', function () {
+    ModalConnexionCtrl.open();
+    expect(scope.selected).toBe('item1');
   });
 });
