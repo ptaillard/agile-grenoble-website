@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="AgileGrenobleApp">
+<html xmlns:ng="http://angularjs.org" id="ng-app" ng-app="AgileGrenobleApp">
   <head>
       <meta charset="utf-8" />
       <meta content="IE=Edge" http-equiv="X-UA-Compatible" />
@@ -9,100 +9,39 @@
   </head>
   <body id="skrollr-body" ng-controller="AgileGrenobleCtrl">
 
-      <div class="page" id="accueil"
-          data-start="top:40%;"
-          data-500-start="top:0%;"
-      >
-          <div style="font-size:2em" data-start=" transform: scale(1.0); opacity:1;"
-              data-500-start="opacity:0; transform: scale(0.25);">
-              <h1>Agile Grenoble</h1>
-              <h2>Réconcilions efficacité et plaisir au travail</h2>
-          </div>
-      </div>
+    <div ag-nav></div>
 
-      <div class="page" id="sponsors"
-            data-top="opacity:1.0; "
-            data-80p-top="opacity:0.2; "
-      >
-          <div class="content">
-            <h2>Nos Sponsors!!!</h2>
-            <div class="speaker-teaser">
-              <img src="images/homer.jpeg" height="200">
-              <img src="images/barack.jpeg" height="200">
-              <img src="images/justinbieber.jpeg" height="200">
-            </div>
-          </div>
-      </div>
+    <div ag-accueil></div>
 
-      <div class="page" id="orateurs"
-            data-top="opacity:1.0; "
-            data-80p-top="opacity:0.2; "
-      >
-          <div class="content">
-            <h2>Keynotes!</h2>
-            <div class="keynote-teaser" >
-              <img src="https://pbs.twimg.com/profile_images/1860391237/fbeauregard.png" height="300" title="François Beauregard"> </img>
-              <img src="https://pbs.twimg.com/profile_images/1734100582/Alexandre_GERARD.jpg" height="300" title="Alexandre Gerard">
-            </div>
-            <p></p>
-            <center>
-              <a href="submit.html"><button type="button" class="link_button"><div class="submit-session" >l'appel à orateurs est ouvert</div></button></a>
-            </center>
-          </div>
-      </div>
+    <div ag-sponsors></div>
 
-      <div class="page" id="programme"
-            data-top="opacity:1.0; "
-            data-80p-top="opacity:0.2; "
-      >
-          <div class="content">
-          INFOS PROGRAMME
-          </div>
-      </div>
+    <div ag-orateurs></div>
 
+    <div ag-participants></div>
+
+
+    <script src="bower_components/bower-skrollr/skrollr.min.js"></script>
+    <script src="bower_components/skrollr-menu/dist/skrollr.menu.min.js"></script>
+    <script src="scripts/scroll.js"></script>
+    <script src="https://apis.google.com/js/client:plusone.js" type="text/javascript"></script>
+
+
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-route/angular-route.min.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.min.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+    <script src="bower_components/angular-directive.g-signin/google-plus-signin.js"></script>
+    <script src="scripts/app.js"></script>
     
-    <div id="slideNav" style="display: block;">
-      <img class="logo" src="./images/LOGO4.JPG" border=0 alt="logo">
-      <div class="menu">
-        <ul>
-          <li>
-              <a href="#programme">Programme</a>
-          </li>
-          <li>
-              <a href="#orateurs">Orateurs</a>
-          </li>
-          <li>
-              <a href="#sponsors">Sponsors</a>
-          </li>
-          <li>
-            <a href="#accueil">Accueil</a>
-          </li>
-        </ul>
-        <div class="connexion" ng-controller="ModalConnexionCtrl">
-          <div class="btn btn-default" ng-hide="logged" ng-click="open()">Connexion</div>
-          <div class="btn btn-default" ng-show="logged" ng-click="disconnect()">Deconnexion</div>
-        </div>
-      </div>
-      <div ng-show="logged" class="userProfile" popover-placement="left" popover="{{name}} ({{email}})" popover-trigger="mouseenter">
-        <img ng-src="{{ image }}" width="40px" height="40px"/>
-      </div>
-    </div>
+    <script src="scripts/controllers/agileGrenobleController.js"></script>
 
-      <script src="bower_components/bower-skrollr/skrollr.min.js"></script>
-      <script src="bower_components/skrollr-menu/dist/skrollr.menu.min.js"></script>
-      <script src="scripts/scroll.js"></script>
-
-      <script src="https://apis.google.com/js/client:plusone.js" type="text/javascript"></script>
-
-
-      <script src="bower_components/angular/angular.min.js"></script>
-      <script src="bower_components/angular-route/angular-route.min.js"></script>
-      <script src="bower_components/angular-resource/angular-resource.min.js"></script>
-      <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
-      <script src="bower_components\angular-directive.g-signin/google-plus-signin.js"></script>
-      <script src="scripts/app.js"></script>
-      
-      <script src="scripts/controllers/agileGrenobleController.js"></script>
-      <script src="scripts/controllers/connexionController.js"></script>
+    <script src="scripts/directives/navDirective.js"></script>
+    <script src="scripts/directives/accueilDirective.js"></script>
+    <script src="scripts/directives/sponsorsDirective.js"></script>
+    <script src="scripts/directives/orateursDirective.js"></script>
+    <script src="scripts/directives/participantsDirective.js"></script>
+    
+    <script src="scripts/controllers/carouselController.js"></script>
+    <script src="scripts/controllers/connexionController.js"></script>
   </body>
 </html>

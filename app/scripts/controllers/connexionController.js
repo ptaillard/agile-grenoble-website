@@ -7,13 +7,12 @@ AgileGrenobleApp.controller('ModalConnexionInstanceCtrl', function($scope, $moda
     .controller('ModalConnexionCtrl', function($scope, $rootScope, $modal, $log) {
        
 		  var modalInstance = null;
-		  
+
 		  $scope.disconnect = function() {
 		  	gapi.auth.signOut();
 		  };
 
 		  $scope.open = function () {
-
 		    modalInstance = $modal.open({
 		      templateUrl: './views/connexion.html',
 		      controller: "ModalConnexionInstanceCtrl",
