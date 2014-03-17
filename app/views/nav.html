@@ -1,26 +1,28 @@
- <div id="slideNav" style="display: block;">
-  <img class="logo" src="./images/LOGO4.JPG" border=0 alt="logo">
-  <div class="menu">
-    <ul>
-      <li id="indexParticipants">
-          <a href="#participants">Participants</a>
-      </li>
-      <li id="indexOrateurs">
-          <a href="#orateurs">Orateurs</a>
-      </li>
-      <li id="indexSponsors">
-          <a href="#sponsors">Sponsors</a>
-      </li>
-      <li>
-        <a href="#accueil">Accueil</a>
-      </li>
-    </ul>
-    <div class="connexion" ng-controller="ModalConnexionCtrl">
-      <div class="btn btn-default" ng-hide="logged" ng-click="open()">Connexion</div>
-      <div class="btn btn-default" ng-show="logged" ng-click="disconnect()">Deconnexion</div>
+ <div>
+   <div id="slideNav" style="display: block;">
+    <div class="menu">
+      <ul>
+        <li id="indexParticipants">
+            <a href="#participants">Participants</a>
+        </li>
+        <li id="indexOrateurs">
+            <a href="#orateurs">Orateurs</a>
+        </li>
+        <li id="indexSponsors">
+            <a href="#sponsors">Sponsors</a>
+        </li>
+        <li>
+          <a href="#accueil">Accueil</a>
+        </li>
+      </ul>
+      <div class="connexion" ng-controller="ModalConnexionCtrl">
+        <div class="btn btn-default" ng-hide="logged" ng-click="open()">Connexion</div>
+        <div class="btn btn-default" ng-show="logged" ng-click="disconnect()">Deconnexion</div>
+      </div>
+    </div>
+    <div ng-show="logged" class="userProfile" popover-placement="left" popover="{{name}} ({{email}})" popover-trigger="mouseenter">
+      <img ng-src="{{ image }}" width="40px" height="40px"/>
     </div>
   </div>
-  <div ng-show="logged" class="userProfile" popover-placement="left" popover="{{name}} ({{email}})" popover-trigger="mouseenter">
-    <img ng-src="{{ image }}" width="40px" height="40px"/>
-  </div>
+  <img class="logo" src="./images/LOGO4.JPG" border=0 alt="logo">
 </div>
