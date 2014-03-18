@@ -5,6 +5,9 @@ AgileGrenobleApp.directive('agNav', [function() {
 			restrict: 'A',
 			//transclude: 'element',
 			replace: true,
+			controller: function ($scope) {
+				$scope.menuselected = "accueil";
+			},
 			templateUrl: './views/nav.html'
 		};
 	}])
