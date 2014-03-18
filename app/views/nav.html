@@ -3,16 +3,40 @@
     <div class="menu">
       <ul>
         <li id="indexParticipants">
-            <a href="#participants">Participants</a>
+          <div class="elementMenu">
+            <a ng-class="{selectedElementMenu: menuselected == 'infos'}" href="#{{menuselected}}" ng-click="menuselected = 'infos'">Infos</a>
+            <div ng-class="{selectedElementMenuUnderscore: menuselected == 'infos'}" class="elementMenuUnderscore"></div>
+          </div>
+        </li>
+        <li id="indexParticipants">
+          <div class="elementMenu">
+            <a ng-class="{selectedElementMenu: menuselected == 'participants'}" href="#{{menuselected}}" ng-click="menuselected = 'participants'">Participants</a>
+            <div ng-class="{selectedElementMenuUnderscore: menuselected == 'participants'}" class="elementMenuUnderscore"></div>
+          </div>
         </li>
         <li id="indexOrateurs">
-            <a href="#orateurs">Orateurs</a>
+          <div class="elementMenu">
+            <a ng-class="{selectedElementMenu: menuselected == 'orateurs'}" href="#{{menuselected}}" ng-click="menuselected = 'orateurs'">Orateurs</a>
+            <div ng-class="{selectedElementMenuUnderscore: menuselected == 'orateurs'}" class="elementMenuUnderscore"></div>
+          </div>
         </li>
         <li id="indexSponsors">
-            <a href="#sponsors">Sponsors</a>
+          <div class="elementMenu">
+            <a ng-class="{selectedElementMenu: menuselected == 'sponsors'}" href="#{{menuselected}}" ng-click="menuselected = 'sponsors'">Sponsors</a>
+            <div ng-class="{selectedElementMenuUnderscore: menuselected == 'sponsors'}" class="elementMenuUnderscore"></div>
+          </div>
         </li>
         <li>
-          <a href="#accueil">Accueil</a>
+          <div class="elementMenu">
+            <a ng-class="{selectedElementMenu: menuselected == 'keynotes'}" href="#{{menuselected}}" ng-click="menuselected = 'keynotes'">Keynotes</a>
+            <div ng-class="{selectedElementMenuUnderscore: menuselected == 'keynotes'}" class="elementMenuUnderscore"></div>
+          </div>
+        </li>
+        <li>
+          <div class="elementMenu">
+            <a ng-class="{selectedElementMenu: menuselected == 'accueil'}" href="#{{menuselected}}" ng-click="menuselected = 'accueil'">Accueil</a>
+            <div ng-class="{selectedElementMenuUnderscore: menuselected == 'accueil'}" class="elementMenuUnderscore"></div>
+          </div>
         </li>
       </ul>
       <div class="connexion" ng-controller="ModalConnexionCtrl">
@@ -24,5 +48,5 @@
       <img ng-src="{{ image }}" width="40px" height="40px"/>
     </div>
   </div>
-  <img class="logo" src="./images/LOGO4.JPG" border=0 alt="logo">
+  <img class="logo" src="./images/media/logo_ag_white_320.png" border=0 alt="logo">
 </div>
