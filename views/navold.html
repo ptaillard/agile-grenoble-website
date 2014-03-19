@@ -1,0 +1,52 @@
+ <div>
+   <div id="slideNav" style="display: block;">
+    <div class="menu">
+      <ul>
+        <li>
+          <div class="elementMenu">
+            <a ng-class="{selectedElementMenu: menuselected == 'infos'}" ng-href="#{{menuselected}}" ng-click="menuselected = 'infos'">Infos</a>
+            <div ng-class="{selectedElementMenuUnderscore: menuselected == 'infos'}" class="elementMenuUnderscore"></div>
+          </div>
+        </li>
+        <li>
+          <div class="elementMenu">
+            <a ng-class="{selectedElementMenu: menuselected == 'participants'}" ng-href="#{{menuselected}}" ng-click="menuselected = 'participants'">Participants</a>
+            <div ng-class="{selectedElementMenuUnderscore: menuselected == 'participants'}" class="elementMenuUnderscore"></div>
+          </div>
+        </li>
+        <li>
+          <div class="elementMenu">
+            <a ng-class="{selectedElementMenu: menuselected == 'orateurs'}" ng-href="#{{menuselected}}" ng-click="menuselected = 'orateurs'">Orateurs</a>
+            <div ng-class="{selectedElementMenuUnderscore: menuselected == 'orateurs'}" class="elementMenuUnderscore"></div>
+          </div>
+        </li>
+        <li>
+          <div class="elementMenu">
+            <a ng-class="{selectedElementMenu: menuselected == 'sponsors'}" ng-href="#{{menuselected}}" ng-click="menuselected = 'sponsors'">Sponsors</a>
+            <div ng-class="{selectedElementMenuUnderscore: menuselected == 'sponsors'}" class="elementMenuUnderscore"></div>
+          </div>
+        </li>
+        <li>
+          <div class="elementMenu">
+            <a ng-class="{selectedElementMenu: menuselected == 'keynotes'}" ng-href="#{{menuselected}}" ng-click="menuselected = 'keynotes'">Keynotes</a>
+            <div ng-class="{selectedElementMenuUnderscore: menuselected == 'keynotes'}" class="elementMenuUnderscore"></div>
+          </div>
+        </li>
+        <li>
+          <div class="elementMenu">
+            <a ng-class="{selectedElementMenu: menuselected == 'accueil'}" ng-href="#{{menuselected}}" ng-click="menuselected = 'accueil'">Accueil</a>
+            <div ng-class="{selectedElementMenuUnderscore: menuselected == 'accueil'}" class="elementMenuUnderscore"></div>
+          </div>
+        </li>
+      </ul>
+      <div class="connexion" ng-controller="ModalConnexionCtrl">
+        <div class="btn btn-default" ng-hide="logged" ng-click="open()">Connexion</div>
+        <div class="btn btn-default" ng-show="logged" ng-click="disconnect()">Deconnexion</div>
+      </div>
+    </div>
+    <div ng-show="logged" class="userProfile" popover-placement="left" popover="{{name}} ({{email}})" popover-trigger="mouseenter">
+      <img ng-src="{{ image }}" width="40px" height="40px"/>
+    </div>
+  </div>
+  <img class="logo" src="./images/media/logo_ag_white_320.png" border=0 alt="logo">
+</div>
