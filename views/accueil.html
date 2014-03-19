@@ -10,32 +10,39 @@
     <div class="dateConference"></div>
     
     <div class="accueilFont accueilSponsors accueilZone"></div>
-    <div class="accueilSponsors accueilZone" ng-click="menuselected = 'sponsors'">
-      <div class="accueilSponsorsTop">
-        <div class="accueilImage accueilSponsorsImage"></div>
-        <div class="title">Sponsors?</div><div class="subtitle"><span style="font-size:3vmin"><b>Soutenez</b></span><br> l'évènement au cotés de nos sponsors et partenaires</div>
-      </div>
-      <div class="accueilSponsorsBottom">
-        <div class="carouselSponsor" ng-controller="CarouselSponsorCtrl">
-          <carousel interval="intervalSpeed">
-            <slide ng-repeat="slide in slides" active="slide.active">
-              <img  class="img-rounded" style="max-width:100%; max-height:100%;" ng-src="{{slide.image}}">
-            </slide>
-          </carousel>
+    <a ng-href="#{{menuselected}}" ng-click="menuselected = 'sponsors'">
+      <div class="accueilSponsors accueilZone" ng-click="menuselected = 'sponsors'">
+        <div class="accueilSponsorsTop">
+          <div class="accueilImage accueilSponsorsImage"></div>
+          <div class="title">Sponsors?</div><div class="subtitle"><span style="font-size:3vmin"><b>Soutenez</b></span><br> l'évènement au cotés de nos sponsors et partenaires</div>
+        </div>
+        <div class="accueilSponsorsBottom">
+          <div class="carouselSponsor" ng-controller="CarouselSponsorCtrl">
+            <carousel interval="intervalSpeed">
+              <slide ng-repeat="slide in slides" active="slide.active">
+                <img  class="img-rounded" style="max-width:100%; max-height:100%;" ng-src="{{slide.image}}">
+              </slide>
+            </carousel>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="accueilFont accueilOrateurs accueilZone"></div>
-    <div class="accueilOrateurs accueilZone" ng-click="menuselected = 'orateurs'">
-      <div class="accueilImage accueilOrateursImage"></div>
-      <div class="title">Orateurs?</div><div class="subtitle"><b><span style="font-size:3vmin">Proposez</span></b><br> votre session</div>
-    </div>
-    <div class="accueilFont accueilParticipants accueilZone"></div>
-    <div class="accueilParticipants accueilZone" ng-click="menuselected = 'participants'">
-      <div class="accueilImage accueilParticipantsImage"></div>
-      <div class="title">Participants?</div><div class="subtitle"><span style="font-size:3vmin"><b>Inscrivez</b></span><br> vous à la conférence</div>
-    </div>
+    </a>
     
+    <div class="accueilFont accueilOrateurs accueilZone"></div>
+    <a ng-href="#{{menuselected}}" ng-click="menuselected = 'orateurs'">
+      <div class="accueilOrateurs accueilZone" ng-click="menuselected = 'orateurs'">
+        <div class="accueilImage accueilOrateursImage"></div>
+        <div class="title">Orateurs?</div><div class="subtitle"><b><span style="font-size:3vmin">Proposez</span></b><br> votre session</div>
+      </div>
+    </a>
+
+    <div class="accueilFont accueilParticipants accueilZone"></div>
+    <a ng-href="#{{menuselected}}" ng-click="menuselected = 'participants'">
+      <div class="accueilParticipants accueilZone" ng-click="menuselected = 'participants'">
+        <div class="accueilImage accueilParticipantsImage"></div>
+        <div class="title">Participants?</div><div class="subtitle"><span style="font-size:3vmin"><b>Inscrivez</b></span><br> vous à la conférence</div>
+      </div>
+    </a>
 
     
 </div>
