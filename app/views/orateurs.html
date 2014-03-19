@@ -7,13 +7,32 @@
     <div class="contentText" >
       <h2>Orateurs</h2>
       <center>
-        <div><form>
-          titre: <input type="text" name="titre"><br>
-          abstract: <textarea width="200px" type="text" name="abstract"></textarea><br>
-          prénom: <input type="text" name="firstname"><br>
-          nom: <input type="text" name="lastname"><br>
-          <input type="submit" value="Submit">
-        </form></div>
+        <div>
+          <form role="form">
+            <div class="form-group">
+              <label for="orateursTitreSession">Titre de la session</label>
+              <input type="text" class="form-control" id="orateursTitreSession" placeholder="Titre de la session">
+            </div>
+            <div class="form-group">
+              <label for="orateursResumeSession">Résumé</label>
+              <textarea class="form-control" id="orateursResumeSession" placeholder="Résumé" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="orateursNomSession">Nom</label>
+              <input type="text" class="form-control" id="orateursNomSession" placeholder="Nom">
+            </div>
+            <div class="form-group">
+              <label for="orateursPrenomSession">Prénom</label>
+              <input type="text" class="form-control" id="orateursPrenomSession" placeholder="Prénom">
+            </div>
+            <div class="form-group">
+              <label for="orateursEmailSession">Adresse email</label>
+              <input type="text" class="form-control" id="orateursEmailSession" placeholder="Email">
+            </div>
+            <br>
+            <button type="button" class="btn btn-primary">Soumettre</button>
+          </form>
+        </div>
       </center>
     </div>
   </div>

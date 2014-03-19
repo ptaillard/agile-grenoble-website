@@ -151,7 +151,7 @@ img.logo {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
-	background-image:url('../images/media/background/amphiBW.jpg');
+	background-image:url('../images/media/background/amphiBW.JPG');
 }
 
 /* Slide orateurs */
@@ -163,7 +163,7 @@ img.logo {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
-	background-image:url('../images/media/background/amphi.jpg');
+	background-image:url('../images/media/background/amphi.JPG');
 }
 
 /* Slide participants */
@@ -175,7 +175,7 @@ img.logo {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
-	background-image:url('../images/media/background/fisheye.jpg');
+	background-image:url('../images/media/background/fisheye.JPG');
 }
 
 /* Slide infos */
@@ -186,7 +186,7 @@ img.logo {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
-	background-image:url('../images/media/background/orga.jpg');
+	background-image:url('../images/media/background/orga.JPG');
 }
 
 .contentInfosGlobal {
@@ -247,7 +247,7 @@ img.logo {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
-	background-image:url('../images/media/background/pascal.jpg');
+	background-image:url('../images/media/background/pascal.JPG');
 }
 
 
