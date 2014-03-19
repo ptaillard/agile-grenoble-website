@@ -24,6 +24,7 @@
     "skrollr-menu": "~0.1.11",
     "jquery-waypoints": "~2.0.4",
     "bootstrap": "~3.1.1",
-    "angular-directive.g-signin": "*"
+    "angular-directive.g-signin": "*",
+    "angular-ui-utils": "~0.1.1"
   }
 }

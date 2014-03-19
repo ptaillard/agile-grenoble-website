@@ -1,5 +1,17 @@
 var AgileGrenobleApp = AgileGrenobleApp || {};
-AgileGrenobleApp.directive('agNav', [function() {
+AgileGrenobleApp
+	.service('selectMenu', function() {
+		var menuselected = null;
+
+		this.set = function(menu) {
+			menuselected = menu;
+		};
+
+		this.get = function() {
+
+		};
+	})
+	.directive('agNav', ['selectMenu', function(selectMenu) {
 		
 		return {
 			restrict: 'A',
@@ -7,6 +19,7 @@ AgileGrenobleApp.directive('agNav', [function() {
 			replace: true,
 			controller: function ($scope) {
 				$scope.menuselected = "accueil";
+				selectMenu.set($scope.menuselected);
 			},
 			templateUrl: './views/nav.html'
 		};
