@@ -11,8 +11,9 @@ AgileGrenobleApp
 					$scope.$parent.$apply();
 				};
 			},
-			scope: {idPage:'@agPage'},
-			template: '<div ng-transclude ui-jq="waypoint" ui-options="scrolled, {offset:-1}" class="page" id="{{idPage}}" data-top="opacity:1.0; " data-80p-top="opacity:0.2; "></div>'
+			scope: {idPage:'@agPage',
+					offset: '=offset'},
+			template: '<div ng-transclude ui-jq="waypoint" ui-options="scrolled, {offset:{{offset}}}" class="page" id="{{idPage}}" data-top="opacity:1.0; " data-80p-top="opacity:0.2; "></div>'
 		};
 	}])
 ;
