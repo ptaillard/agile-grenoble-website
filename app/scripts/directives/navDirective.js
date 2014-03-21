@@ -4,7 +4,6 @@ AgileGrenobleApp
 		
 		return {
 			restrict: 'A',
-			//transclude: 'element',
 			replace: true,
 			controller: function ($scope) {
 				$scope.menuselected = "accueil";

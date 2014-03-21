@@ -12,121 +12,37 @@ body, html {
 	font-family: times, Times New Roman, times-roman, georgia, serif;
 }
 
-/* Menu */
-#slideNav {
-	position: fixed;
-	opacity: 0.8;
-	height: 80px;
-	top:10px;
-	width: 100%;
-	background-color: #2c2c2c;
-	-moz-box-shadow: 1px 1px 5px 0px #2c2c2c;
-	-webkit-box-shadow: 1px 1px 5px 0px #2c2c2c;
-	-o-box-shadow: 1px 1px 5px 0px #2c2c2c;
-	box-shadow: 1px 1px 5px 0px #2c2c2c;
-	filter:progid:DXImageTransform.Microsoft.Shadow(color=#2c2c2c, Direction=134, Strength=5);
-	z-index: 10;
-}
-
-#slideNav .menu {
-	position: absolute;
-	margin-right: 20px;
-	right: 50px;
-	height: 100%;
-}
-
-#slideNav .menu ul {
-	margin-top: 50px;
-}
-
-#slideNav .menu ul li {
-	float: right;
-    list-style: none;
-}
-
-#slideNav .menu ul li a {
-	display: inline-block;
-    width: 80px;
-    padding: 5px;
-    text-decoration: none;
-    color: #EBEFF5;
-}
-
-#slideNav .menu ul li a:hover {
-    color: #CBCFD5;
-}
-
-
-.selectedElementMenu {
-	color: #FF7F2A;
-}
-
-.elementMenu {
-	position: relative;
-	text-align: center;
-	width: 100%;
-	height: 100%;
-}
-
-.elementMenuUnderscore {
-	position: absolute;
-	width: 100%;
-	height: 10%;
-	bottom:0%;
-	background-color: #EBEFF5;
-}
-
-
-.selectedElementMenuUnderscore {
-	background-color: #FF7F2A !important;
-}
-
-
-#slideNav .menu .connexion {
-	position: absolute;
-	top:10px;
-	right: 0px;
-}
-
-#slideNav .userProfile {
-	position: absolute;
-	right: 10px;
-	top: 20px;
-}
-
-
-/* Logo Agile Grenoble */
-img.logo {
-	position: fixed;
-	top:10px; 
-	left:30px; 
-	height:80px; 
-	width:140px;
-	z-index:20;
-}
-
 /* Slides */
 .page {
     height: 100%;
     border-box: box-sizing;
+    background-color: black;
+    color: #EBEFF5;
+    padding: 20px;
+    background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
 }
 
 .contentText {
 	position: absolute;
 	width: 100%;
 	height: 100%;
+	margin: 20px;
 	text-align: center;
 	vertical-align: middle;
 }
 
 .content {
 	position: relative;
-	width: 100%;
-	height: 60%;
-	top: 20%;
+	width: 980px;
+	height: 80%;
+	top: 10%;
 	color: #2c2c2c;
 	text-align: center;
 	vertical-align: middle;
+	overflow: hidden;
 }
 
 .contentTransparent {
@@ -134,7 +50,7 @@ img.logo {
 	border-radius: 2px;
 	width: 100%;
 	height: 100%;
-	opacity: 0.98;
+	opacity: 0.90;
 	background-color: #e3e3e3;
 	-moz-box-shadow: 1px 1px 5px 0px #2c2c2c;
 	-webkit-box-shadow: 1px 1px 5px 0px #2c2c2c;
@@ -143,275 +59,13 @@ img.logo {
 	filter:progid:DXImageTransform.Microsoft.Shadow(color=#2c2c2c, Direction=134, Strength=5);
 }
 
-/* Slide sponsors */
-#sponsors {
-	background-color: black;
-    color: #EBEFF5;
-    padding: 20px;
-    background-position: center center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-	background-image:url('../images/media/background/amphiBW.JPG');
-}
-
-/* Slide orateurs */
-#orateurs {
-	background-color: black;
-    color: #EBEFF5;
-    padding: 20px;
-    background-position: center center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-	background-image:url('../images/media/background/amphi.JPG');
-}
-
-/* Slide participants */
-#participants {
-	background-color: black;
-    color: #EBEFF5;
-    padding: 20px;
-    background-position: center center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-	background-image:url('../images/media/background/fisheye.JPG');
-}
-
-/* Slide infos */
-#infos {
-	background-color: black;
-    color: #EBEFF5;
-    background-position: center center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-	background-image:url('../images/media/background/orga.JPG');
-}
-
-.contentInfosGlobal {
-	position: relative;
-	width: 100%;
-	height: 100%;
-}
-
-.contentInfos {
-	position: absolute;
-	width: 100%;
-	height: 60%;
-	top: 20%;
-	color: #2c2c2c;
-	text-align: center;
-	vertical-align: middle;
-}
-
-.footer {
-	position: absolute;
-	width: 100%;
-	height: 80px;
-	bottom: 0px;
-	background-color: #EBEFF5;
-	text-align: center;
-	vertical-align: middle;
-	border-top: 1px solid #2c2c2c;
-}
-
-.hotelsInfos {
-	position: absolute;
-	width: 50%;
-	right: 0px;
-	height: 100%;
-	padding: 10px;
-	font-size:2vmin;
-}
-
-.hotelsInfos li {
-	list-style: none; 
-}
-
-.googlemaps {
-	position: absolute;
-	font-size:2vmin;
-	width: 50%;
-	left: 0px;
-	height: 100%;
-	padding: 10px;
-}
-
-/* Slide infos */
-#keynotes {
-	background-color: black;
-    color: #EBEFF5;
-    padding: 20px;
-    background-position: center center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-	background-image:url('../images/media/background/pascal.JPG');
-}
-
-
-/* Slide accueil */
-#accueil {
-    background-color: black;
-    color: #EBEFF5;
-    padding: 20px;
-    background-position: center center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-	background-image:url('../images/media/background/cordee.jpg');
-}
-
-#accueil .titreAgileGrenoble {
-	position: relative;
-	padding: 2%;
-	width: 50%;
-	left:25%;
-	top: 120px;
-	text-align: center;
-	vertical-align: middle;
-	color: black;
-	background-color: #EBEFF5;
-	font-size:5vmin;
-	opacity: 0.4;
-	border-radius: 2px;
-	-moz-box-shadow: 1px 1px 5px 0px #2c2c2c;
-	-webkit-box-shadow: 1px 1px 5px 0px #2c2c2c;
-	-o-box-shadow: 1px 1px 5px 0px #2c2c2c;
-	box-shadow: 1px 1px 5px 0px #2c2c2c;
-	filter:progid:DXImageTransform.Microsoft.Shadow(color=#2c2c2c, Direction=134, Strength=5);
-}
-
-#accueil .carouselSponsor {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-}
-
-#accueil .accueilZone {
-	position: absolute;
-	cursor: pointer;
-	color: #2c2c2c;
-	text-align: center;
-	width:25%;
-	height:20%;
-}
-
-.accueilImage {
-	position: absolute;
-	opacity: 1.0;
-	left:-15px;
-	top:-15px;
-	width:50px;
-	height:50px;
-	background-repeat: no-repeat;
-	background-size:contain;
-}
-
-.accueilSponsorsImage {
-	background-image: url(../images/media/icon_orange_money.png);
-}
-
-.accueilOrateursImage {
-	background-image: url(../images/media/icon_orange_speaker.png);
-}
-
-.accueilParticipantsImage {
-	background-image: url(../images/media/icon_orange_ticket.png);
-}
-
-#accueil .accueilZone .title {
-	position: absolute;
-	top:5%;
-	width:100%;
-	height:35%;
-	padding-top: 5px;
-	font-size:4vmin;
-	font-weight: bold;
-	text-shadow: 2px 2px 5px rgba(150, 150, 150, 1);
-}
-
-
-#accueil .accueilZone .subtitle {
-	position: absolute;
-	padding-top: 5px;
-	color: black;
-	top:35%;
-	width:100%;
-	height:65%;
-	font-size:2.5vmin;
-}
-
-#accueil .accueilSponsors {
-	left:5%;
-	top:55%;
-	height:40%;
-}
-
-#accueil .accueilSponsors .title {
-	color: #5468FF;
-}
-
-.accueilSponsorsTop {
-	position:absolute;
-	height:60%; 
-	width:100%;
-}
-
-.accueilSponsorsBottom {
-	position: absolute;
-	width: 60%;
-	left: 20%;
-	top: 60%;
-	height: 40%;
-}
-
-#accueil .accueilOrateurs {
-	left:37%;
-	top:55%;
-}
-
-#accueil .accueilOrateurs .title {
-	color: red;
-}
-
-
-#accueil .accueilParticipants {
-	left:70%;
-	top:55%;
-}
-
-#accueil .accueilFont {
-	background-color: #EBEFF5;
-	opacity: 0.4;
-	border-radius: 2px;
-	-moz-box-shadow: 1px 1px 5px 0px #2c2c2c;
-	-webkit-box-shadow: 1px 1px 5px 0px #2c2c2c;
-	-o-box-shadow: 1px 1px 5px 0px #2c2c2c;
-	box-shadow: 1px 1px 5px 0px #2c2c2c;
-	filter:progid:DXImageTransform.Microsoft.Shadow(color=#2c2c2c, Direction=134, Strength=5);
-}
-
-#accueil .dateConference {
-	position: absolute;
-	left:68%;
-	top:120px;
-	width: 10%;
-	height: 10%;
-	background-image: url(../images/media/text_hand_confdate_256.png);
-	background-repeat: no-repeat;
-	background-size:contain;
-	-moz-transform:rotate(15deg);
-	-webkit-transform:rotate(15deg);
-	-o-transform:rotate(15deg);
-	-ms-transform:rotate(15deg);
-	filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=0.18);
-}
-
-#accueil .accueilParticipants .title {
-	color: green;
+.btn-xlarge {
+	padding: 18px 28px;
+	font-size: 32px;
+	line-height: normal;
+	-webkit-border-radius: 8px;
+	   -moz-border-radius: 8px;
+	        border-radius: 8px;
 }
 
 
@@ -457,73 +111,3 @@ img.logo {
 	font-weight: 100;
 }
 
-.navbar-default {
-	background-color: #2c2c2c;
-	border-color: #303030;
-	position: fixed;
-	opacity: 0.8;
-	top: 10px;
-	height: 80px;
-	width: 100%;
-	z-index: 10;
-	-moz-box-shadow: 1px 1px 5px 0px #2c2c2c;
-	-webkit-box-shadow: 1px 1px 5px 0px #2c2c2c;
-	-o-box-shadow: 1px 1px 5px 0px #2c2c2c;
-	box-shadow: 1px 1px 5px 0px #2c2c2c;
-	filter:progid:DXImageTransform.Microsoft.Shadow(color=#2c2c2c, Direction=134, Strength=5);
-}
-.navbar-default .navbar-brand {
-	color: #ebeef5;
-}
-.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-	color: #ff7f2a;
-}
-.navbar-default .navbar-text {
-	color: #ebeef5;
-}
-.navbar-default .navbar-nav > li > a {
-	color: #ebeef5;
-}
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-	color: #ff7f2a;
-}
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-	color: #ff7f2a;
-	background-color: #2c2c2c;
-}
-.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
-	color: #ff7f2a;
-	background-color: #2c2c2c;
-}
-.navbar-default .navbar-toggle {
-	border-color: #2c2c2c;
-}
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-	background-color: #2c2c2c;
-}
-.navbar-default .navbar-toggle .icon-bar {
-	background-color: #ebeef5;
-}
-.navbar-default .navbar-collapse,
-.navbar-default .navbar-form {
-	border-color: #ebeef5;
-}
-.navbar-default .navbar-link {
-	color: #ebeef5;
-}
-.navbar-default .navbar-link:hover {
-	color: #ff7f2a;
-}
-
-@media (max-width: 767px) {
-	.navbar-default .navbar-nav .open .dropdown-menu > li > a {
-		color: #ebeef5;
-	}
-	.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-		color: #ff7f2a;
-	}
-	.navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-		color: #ff7f2a;
-		background-color: #2c2c2c;
-	}
-}

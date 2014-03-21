@@ -1,2 +1,2 @@
-var AgileGrenobleApp = angular.module('AgileGrenobleApp', ['ngRoute', 'ui.bootstrap', 'directive.g+signin']);
+var AgileGrenobleApp = angular.module('AgileGrenobleApp', ['ngRoute', 'ui.bootstrap', 'directive.g+signin', 'ui.utils']);
 

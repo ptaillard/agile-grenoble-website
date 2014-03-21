@@ -3,8 +3,12 @@ AgileGrenobleApp.directive('agKeynotes', [function() {
 		
 		return {
 			restrict: 'A',
-			//transclude: 'element',
-			replace: true,
+			replace: false,
+			controller: function ($scope) {
+				$scope.scrolled = function() {
+					$scope.menuselected = "keynotes";
+				};
+			},
 			templateUrl: './views/keynotes.html'
 		};
 	}])
