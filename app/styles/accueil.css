@@ -46,7 +46,7 @@
 	height:50px;
 }
 
-.accueilImage {
+#accueil .accueilImage {
 	position: absolute;
 	opacity: 1.0;
 	left:-25px;
@@ -55,6 +55,7 @@
 	height:50px;
 	background-repeat: no-repeat;
 	background-size:contain;
+	z-index: 1000;
 }
 
 .accueilSponsorsImage {
