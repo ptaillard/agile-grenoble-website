@@ -282,3 +282,35 @@ fieldset[disabled] .btn-participants.active {
   color: #C2D0EB; 
   background-color: #FFFFFF; 
 }
+
+.transparent_white50 {
+  color: black;
+  background: rgb(255,255,255);  
+  background: transparent\9;  
+  background:rgba(255,255,255,.5);  
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#80FFFFFF,endColorstr=#80FFFFFF); 
+}
+
+.transparent_white75 {
+  color: black;
+  background: rgb(255,255,255);  
+  background: transparent\9;  
+  background:rgba(255,255,255,.75);  
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#C0FFFFFF,endColorstr=#C0FFFFFF); 
+}
+
+.transparent_black50 {
+  color: white;
+  background: rgb(0,0,0);  
+  background: transparent\9;  
+  background:rgba(0,0,0,0.5);  
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#80000000,endColorstr=#80000000); 
+}
+
+.transparent_black75 {
+  color: white;
+  background: rgb(0,0,0);  
+  background: transparent\9;  
+  background:rgba(0,0,0,0.75);  
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#C0000000,endColorstr=#C0000000); 
+}
