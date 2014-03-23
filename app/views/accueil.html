@@ -1,15 +1,13 @@
 <div class="content container">
-  
-  <div class="row">
-    <div class="dateConference"></div>
-    <div class="jumbotron col-md-12 transparent_white50">
-      <div data-start=" transform: scale(1.0); opacity:0.6;"
+  <div class="row" style="height:20%;">
+    <div class="jumbotron col-md-12 transparent_black50" data-start=" transform: scale(1.0); opacity:1.0;"
         data-500-start="opacity:0; transform: scale(0.25);">
-         <h2 class="text-center">Réconcilions plaisirs et efficacité au travail</h2>   
-      </div>
+        <div class="dateConference"></div>
+        <h2 class="text-center">Réconcilions plaisirs et efficacité au travail</h2>
     </div>
   </div>
-  <div class="row">
+  <div class="row" style="height:40%;"></div>
+  <div class="row" style="height:20%;">
     <div class="col-md-4">
       <a ng-href="#{{menuselected}}" ng-click="menuselected = 'sponsors'">
         <div ng-click="menuselected = 'sponsors'">
@@ -33,9 +31,10 @@
       </a>
     </div>
   </div>
-  <div class="row">
+  <div class="row" style="height:20%;">
+    <br>
     <div class="col-md-3">
-      <div  ng-controller="CarouselSponsorCtrl">
+      <div ng-controller="CarouselSponsorCtrl">
         <carousel interval="intervalSpeed">
           <slide ng-repeat="slide in slides" active="slide.active">
             <img  class="img-rounded" style="max-width:100%; max-height:100%;" ng-src="{{slide.image}}">
