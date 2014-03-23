@@ -6,32 +6,49 @@
         <h2 class="text-center">Réconcilions plaisirs et efficacité au travail</h2>
     </div>
   </div>
-  <div class="row visible-md visible-lg"><br><br><br><br><br><br><br><br><br></div>
+  <div class="row" data-start=" transform: scale(1.0); opacity:1.0;"
+        data-500-start="opacity:0; transform: scale(0.25);">
+    <br>
+    <div class="col-md-8 visible-md visible-lg">
+    </div>
+    <div class="col-md-2 text-right visible-md visible-lg">
+      <i><strong>Organisé par</strong></i>
+    </div>
+    <div class="col-md-2 text-left visible-sm visible-xs">
+      <i><strong>Organisé par</strong></i>
+    </div>
+    <div class="col-md-2">
+      <img src="./images/media/cara.png" width="200px" height="200px" class="img-responsive" alt="Responsive image">
+    </div>
+    <br>
+  </div>
+  <div class="row visible-md visible-lg"><br><br><br><br></div>
   <div class="row visible-lg"><br><br><br><br><br><br><br><br><br></div>
   <div class="row">
     <div class="col-md-4">
-      <div ng-href="#{{menuselected}}" ng-click="menuselected = 'sponsors'">
+      <a ng-href="#{{menuselected}}" ng-click="menuselected = 'sponsors'">
         <div class="text-xlarge panel panel-default transparent_black50" data-container="body" popover-placement="top" popover="Soutenez l'évènement au cotés de nos sponsors et partenaires" popover-trigger="mouseenter"><p class="text-danger text-center"><span class="glyphicon glyphicon-euro"></span> Sponsors</p>
         </div>
-      </div>
+      </a>
     </div>
 
     <div class="col-md-4">
-      <div ng-href="#{{menuselected}}" ng-click="menuselected = 'orateurs'">
+      <a ng-href="#{{menuselected}}" ng-click="menuselected = 'orateurs'">
         <div class="text-xlarge panel panel-default transparent_black50" data-container="body" popover-placement="top" popover="Proposez votre session" popover-trigger="mouseenter"><p class="text-primary text-center"><span class="glyphicon glyphicon-volume-up"></span> Orateurs</p>
         </div>
-      </div>
+      </a>
     </div>
     <div class="col-md-4">
-      <div ng-href="#{{menuselected}}" ng-click="menuselected = 'participants'">
-        <div class="text-xlarge panel panel-default transparent_black50" data-container="body" popover-placement="top" popover="Inscrivez-vous à la conférence" popover-trigger="mouseenter"><p class="text-success text-center"><span class="glyphicon glyphicon-user"></span> Participants</p>
+      <a ng-href="#{{menuselected}}" ng-click="menuselected = 'participants'">
+        <div class="text-xlarge panel panel-default transparent_black50 " data-container="body" popover-placement="top" popover="Inscrivez-vous à la conférence" popover-trigger="mouseenter"><p class="text-success text-center"><span class="glyphicon glyphicon-user"></span> Participants</p>
         </div>
-      </div>
+      </a>
     </div>
   </div>
   <div class="row">
     <br>
     <div class="col-md-3">
+      <h4 class="text-muted"><i>Merci à nos sponsors<i></h4>
       <div ng-controller="CarouselSponsorCtrl">
         <carousel interval="intervalSpeed">
           <slide ng-repeat="slide in slides" active="slide.active">
@@ -40,7 +57,10 @@
         </carousel>
       </div>
     </div>
-    <div class="col-md-9">
+    <div class="col-md-6">
+    </div>
+    <div class="text-xlarge panel panel-default transparent_white50 col-md-3">
+      Agile Innovation
     </div>
   </div>
 </div>
