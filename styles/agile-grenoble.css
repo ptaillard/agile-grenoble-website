@@ -16,8 +16,6 @@ body, html {
 .page {
     height: 100%;
     border-box: box-sizing;
-    background-color: black;
-    color: #EBEFF5;
     background-position: center center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -25,21 +23,17 @@ body, html {
 }
 
 .content {
-	position: relative;
-	width: 980px;
-	height: 80%;
-	top: 10%;
-	color: #2c2c2c;
-	text-align: center;
-	vertical-align: middle;
+	padding-top: 100px;
+	height: 100%;
 	overflow: hidden;
 }
 
 /* XXL Bootstrap button */
-.btn-xlarge {
+.text-xlarge {
+	cursor: pointer;
 	padding: 18px 28px;
 	font-size: 32px;
-	line-height: normal;
+	text-decoration: none;
 	-webkit-border-radius: 8px;
 	   -moz-border-radius: 8px;
 	        border-radius: 8px;
@@ -58,3 +52,51 @@ body, html {
 	margin-bottom: 20px;
 }
 
+/* transparent */
+.transparent_white50 {
+  color: black;
+  background: rgb(255,255,255);  
+  background: transparent\9;  
+  background:rgba(255,255,255,.5);  
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#80FFFFFF,endColorstr=#80FFFFFF); 
+}
+
+.transparent_white75 {
+  color: black;
+  background: rgb(255,255,255);  
+  background: transparent\9;  
+  background:rgba(255,255,255,.75);  
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#C0FFFFFF,endColorstr=#C0FFFFFF); 
+}
+
+.transparent_white95 {
+  color: black;
+  background: rgb(255,255,255);  
+  background: transparent\9;  
+  background:rgba(255,255,255,.95);  
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#C0FFFFFF,endColorstr=#C0FFFFFF); 
+}
+
+.transparent_black50 {
+  color: white;
+  background: rgb(0,0,0);  
+  background: transparent\9;  
+  background:rgba(0,0,0,0.5);  
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#80000000,endColorstr=#80000000); 
+}
+
+.transparent_black75 {
+  color: white;
+  background: rgb(0,0,0);  
+  background: transparent\9;  
+  background:rgba(0,0,0,0.75);  
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#C0000000,endColorstr=#C0000000); 
+}
+
+.transparent_black95 {
+  color: white;
+  background: rgb(0,0,0);  
+  background: transparent\9;  
+  background:rgba(0,0,0,0.95);  
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#C0000000,endColorstr=#C0000000); 
+}

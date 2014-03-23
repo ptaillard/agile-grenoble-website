@@ -1,37 +1,35 @@
 <div class="content container">
-  <div class="row" style="height:20%;">
+  <div class="row hidden-xs">
     <div class="jumbotron col-md-12 transparent_black50" data-start=" transform: scale(1.0); opacity:1.0;"
         data-500-start="opacity:0; transform: scale(0.25);">
-        <div class="dateConference"></div>
+        <div class="dateConference visible-md visible-lg"></div>
         <h2 class="text-center">Réconcilions plaisirs et efficacité au travail</h2>
     </div>
   </div>
-  <div class="row" style="height:40%;"></div>
-  <div class="row" style="height:20%;">
+  <div class="row visible-md visible-lg"><br><br><br><br><br><br><br><br><br></div>
+  <div class="row visible-lg"><br><br><br><br><br><br><br><br><br></div>
+  <div class="row">
     <div class="col-md-4">
-      <a ng-href="#{{menuselected}}" ng-click="menuselected = 'sponsors'">
-        <div ng-click="menuselected = 'sponsors'">
-            <button type="button" class="btn btn-sponsors btn-xlarge" popover-placement="top" popover="Soutenez l'évènement au cotés de nos sponsors et partenaires" popover-trigger="mouseenter">Sponsors</button>
+      <div ng-href="#{{menuselected}}" ng-click="menuselected = 'sponsors'">
+        <div class="text-xlarge panel panel-default transparent_black50" data-container="body" popover-placement="top" popover="Soutenez l'évènement au cotés de nos sponsors et partenaires" popover-trigger="mouseenter"><p class="text-danger text-center"><span class="glyphicon glyphicon-euro"></span> Sponsors</p>
         </div>
-      </a>
+      </div>
     </div>
 
     <div class="col-md-4">
-      <a ng-href="#{{menuselected}}" ng-click="menuselected = 'orateurs'">
-        <div ng-click="menuselected = 'orateurs'">
-           <button type="button" class="btn btn-orateurs btn-xlarge" popover-placement="top" popover="Proposez votre session" popover-trigger="mouseenter">Orateurs</button>
+      <div ng-href="#{{menuselected}}" ng-click="menuselected = 'orateurs'">
+        <div class="text-xlarge panel panel-default transparent_black50" data-container="body" popover-placement="top" popover="Proposez votre session" popover-trigger="mouseenter"><p class="text-primary text-center"><span class="glyphicon glyphicon-volume-up"></span> Orateurs</p>
         </div>
-      </a>
+      </div>
     </div>
     <div class="col-md-4">
-      <a ng-href="#{{menuselected}}" ng-click="menuselected = 'participants'">
-        <div ng-click="menuselected = 'participants'">
-          <button type="button" class="btn btn-participants btn-xlarge" data-container="body" popover-placement="top" popover="Inscrivez-vous à la conférence" popover-trigger="mouseenter">Participants</button>
+      <div ng-href="#{{menuselected}}" ng-click="menuselected = 'participants'">
+        <div class="text-xlarge panel panel-default transparent_black50" data-container="body" popover-placement="top" popover="Inscrivez-vous à la conférence" popover-trigger="mouseenter"><p class="text-success text-center"><span class="glyphicon glyphicon-user"></span> Participants</p>
         </div>
-      </a>
+      </div>
     </div>
   </div>
-  <div class="row" style="height:20%;">
+  <div class="row">
     <br>
     <div class="col-md-3">
       <div ng-controller="CarouselSponsorCtrl">
