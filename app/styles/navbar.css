@@ -27,8 +27,8 @@
 	border-bottom: 3px #ebeef5 solid;
 }
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-	color: #428BCA;
-	border-bottom: 3px #428BCA solid;
+	color: #A7BED1;
+	border-bottom: 3px #A7BED1 solid;
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
 	color: #428BCA;
@@ -59,10 +59,11 @@
 	color: #428BCA;
 }
 
-.navbar .container-fluid {
-	position: absolute;
-	bottom: 0;
-	right: 0;
+.navbar .container {
+	position: relative;
+	height: 100%;
+	bottom: -26px;
+	right: 0px;
 	padding-bottom: 0;
 }
 
