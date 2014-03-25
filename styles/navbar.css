@@ -69,9 +69,9 @@
 
 
 /* Logo Agile Grenoble */
-img.logo {
-	position: fixed;
-	top:10px; 
+.navbar .container img.logo {
+	position: absolute;
+	top:-26px;
 	left:30px; 
 	height:80px; 
 	width:140px;
