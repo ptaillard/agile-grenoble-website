@@ -1,94 +1,11 @@
 <div class="content container" >
-  <div class="row text-center">
-      <div class="col-md-12">
-        <div class="btn-group" ng-init="content='map'">
-          <button type="button" class="btn btn-default" ng-click="content='map'">Lieu</button>
-          <button type="button" class="btn btn-default" ng-click="content='hotels'">Hôtels</button>
-          <button type="button" class="btn btn-default" ng-click="content='saisons'">Editions précédentes</button>
+  <div class="row">
+      <div class="col-md-12 ">
+        <div class="jumbotron transparent_white50 text-center">
+          <h1>A propos</h1>    
         </div>
       </div>
   </div>
-  <div class="row">
-    <br>
-    <div class="col-md-12" ng-show="content == 'map'">
-      <div class="panel panel-default transparent_white95 zone text-center">
-        <h4>Lieu de la conférence:</h4>
-        <address>
-          <strong>Centre de congrès du WTC</strong><br>
-          5 place Robert Schumann<br>
-          38000 Grenoble<br>
-        </address>
-        <div class="visible-md visible-lg">
-          <br><br>
-          <iframe class="container well well-small" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2811.803360182313!2d5.7137363!3d45.19107665000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478af481a467bd11%3A0xd9070099953ccffb!2sCentre+de+Congr%C3%A8s+et+Seminaire+WTC+Grenoble!5e0!3m2!1sfr!2sfr!4v1395177516214" style="width:60%; height: 350px;" frameborder="0" style="border:0"></iframe>
-        </div>
-        <div class="visible-sm">
-          <iframe class="container well well-small visible-sd" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2811.803360182313!2d5.7137363!3d45.19107665000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478af481a467bd11%3A0xd9070099953ccffb!2sCentre+de+Congr%C3%A8s+et+Seminaire+WTC+Grenoble!5e0!3m2!1sfr!2sfr!4v1395177516214" style="width:60%; height: 200px;" frameborder="0" style="border:0"></iframe>
-        </div>
-        <div class="visible-xs">
-          <a href="https://www.google.fr/maps/place/Centre+de+congr%C3%A8s+du+World+Trade+Center+Grenoble/@45.1910246,5.713109,17z/data=!3m1!4b1!4m2!3m1!1s0x478af481b7661f97:0x2f475fe8d95f61e0">Google maps</a>
-        </div>
-        <div class="row"><br><br></div>
-      </div>
-    </div>
-    <div class="col-md-12" ng-show="content == 'hotels'">
-      <div class="panel panel-default transparent_white95 zone text-center">
-        <br>
-        <ul class="list-unstyled">
-          <li>
-            <a href="http://www.accorhotels.com/fr/hotel-1624-novotel-grenoble-centre/index.shtml" style="font-family:trebuchet ms,sans-serif" target="_blank">Novotel Grenoble Centre</a>
-            <span style="font-family:trebuchet ms,sans-serif">&nbsp;***, jouxtant le WTC, <br>et à une minute de la gare</span>
-          </li>
-          <li>
-            <a href="http://www.hoteleuropole.com/" style="font-family:trebuchet ms,sans-serif" target="_blank">Grenoble Europole</a>
-            <span style="font-family:trebuchet ms,sans-serif">&nbsp;*** (en face du WTC) 29, rue Pierre-Sémard - <br>Tél +33&nbsp;(0)4 76 49 51 52</span>
-          </li>
-          <li>
-            <a href="http://www.terminus-hotel-grenoble.fr" style="font-family:trebuchet ms,sans-serif" target="_blank">Best Western Terminus</a>
-            <span style="font-family:trebuchet ms,sans-serif">&nbsp;*** (en face de la gare)<br>Tél +33&nbsp;(0)4 76 87 24 33</span>
-          </li>
-          <li>
-            <a href="http://www.ibishotel.com/fr/hotel-2737-ibis-grenoble-gare/index.shtml" style="font-family:trebuchet ms,sans-serif" target="_blank">Ibis</a>
-            <span style="font-family:trebuchet ms,sans-serif">&nbsp;*** (plus loin, le long des quais) 27 Quai Claude Bernard<br>Tel +33&nbsp;(0)4 76 86 68 68</span>
-          </li>
-          <li>
-            <a href="http://www.hotel-des-alpes.fr" style="font-family:trebuchet ms,sans-serif" target="_blank">Hôtel des Alpes</a>
-            <span style="font-family:trebuchet ms,sans-serif">&nbsp;** (proche gare) 45, avenue Félix Viallet<br>Tél +33 (0)4 76 87 00 71</span>
-          </li>
-          <li>
-            <a href="http://www.isere-tourisme.com/HOT/Hotel-Bastille/Grenoble/fiche-1104-1-38AAHOT100025.html" style="font-family:trebuchet ms,sans-serif" target="_blank">Hôtel Bastille</a>
-            <span style="font-family:trebuchet ms,sans-serif">&nbsp;** (proche gare) 25 avenue Félix Viallet<br>Tél +33 (0)4 76 43 10 27</span>
-          </li>
-          <li>
-            <a href="http://www.institut-hotel.fr" style="font-family:trebuchet ms,sans-serif" target="_blank">Hôtel Institut</a>
-            <span style="font-family:trebuchet ms,sans-serif">&nbsp;** (proche WTC, gare) 10 rue Louis Barbillon<br>Tél +33 (0)4 76 46 36 44</span>
-          </li>
-        </ul>
-        <div>
-          <span style="font-family:trebuchet ms,sans-serif">Plus d'hôtels sur </span>*
-          <a href="http://www.grenoble-tourisme.com/" style="font-family:trebuchet ms,sans-serif" target="_blank">Grenoble Tourisme</a>
-        </div>
-        <div class="row"><br><br></div>
-      </div>
-    </div>
-
-    <div class="col-md-12" ng-show="content == 'saisons'">
-      <div class="panel panel-default transparent_white95 zone text-center">
-        <div class="row visible-sm"><br><br></div>
-        <div class="row visible-md visible-lg"><br><br><br></div>
-        <h3>Editions précédentes</h3>
-        <div class="row visible-md visible-lg"><br><br></div>
-        <p>
-          <button type="button" class="btn btn-primary btn-large" ng-click="site(2013)">2013</button>
-          <button type="button" class="btn btn-primary btn-large" ng-click="site(2012)">2012</button>
-          <button type="button" class="btn btn-primary btn-large" ng-click="site(2011)">2011</button>
-          <button type="button" class="btn btn-primary btn-large" ng-click="site(2010)">2010</button>
-          <button type="button" class="btn btn-primary btn-large" ng-click="site(2009)">2009</button>
-        </p>
-        <div class="row"><br><br></div>
-      </div>
-    </div>
-  </div>  
   <div class="row">
     <div class="col-md-12">
       <div class="panel panel-default transparent_black95">
