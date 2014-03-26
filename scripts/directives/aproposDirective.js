@@ -1,5 +1,5 @@
 var AgileGrenobleApp = AgileGrenobleApp || {};
-AgileGrenobleApp.directive('agInfos', [function() {
+AgileGrenobleApp.directive('agApropos', [function() {
 		
 		return {
 			restrict: 'A',
@@ -7,7 +7,7 @@ AgileGrenobleApp.directive('agInfos', [function() {
 			replace: true,
 			controller: function ($scope) {
 			},
-			templateUrl: './views/infos.html'
+			templateUrl: './views/apropos.html'
 		};
 	}])
 ;
