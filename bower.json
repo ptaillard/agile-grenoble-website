@@ -21,7 +21,6 @@
     "jquery": "~2.1.0",
     "angular-route": "~1.2.14",
     "bower-skrollr": "~0.6.21",
-    "skrollr-menu": "~0.1.11",
     "jquery-waypoints": "~2.0.4",
     "bootstrap": "~3.1.1",
     "angular-directive.g-signin": "*",
