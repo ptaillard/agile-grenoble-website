@@ -73,6 +73,12 @@ body, html {
 	margin-bottom: 20px;
 }
 
+/* utilisation de la fonte ubuntu pour les titres */
+
+h1,h2,h3,h4,h5,h6 {
+  font-family:Ubuntu, Arial;
+}
+
 /* transparent */ 
 .transparent {
   color: black;
