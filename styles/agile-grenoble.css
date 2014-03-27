@@ -28,6 +28,14 @@ body, html {
 	overflow: hidden;
 }
 
+#socialnetwork {
+  position: fixed;
+  width: 100px;
+  height: 200px;
+  top: 90px;
+  right: 0px;
+}
+
 
 /* XXL Bootstrap button */
 .text-xlarge {
