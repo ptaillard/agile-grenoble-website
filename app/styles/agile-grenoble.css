@@ -87,7 +87,25 @@ h1,h2,h3,h4,h5,h6 {
   font-family:Ubuntu, Arial;
 }
 
-/* transparent */ 
+
+/* ========= panels ========= */
+
+.ag-section-title  {
+  color :#FF7F2A;
+
+}
+
+.ag-noindent {
+  list-style: disc inside none;
+  padding: 0px;
+}
+
+.panel {
+  border: 0;  
+}
+
+
+/* ====== transparent ====== */ 
 .transparent {
   color: black;
   border: none;
@@ -110,6 +128,14 @@ h1,h2,h3,h4,h5,h6 {
   background: rgb(255,255,255);  
   background: transparent\9;  
   background:rgba(255,255,255,.75);  
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#C0FFFFFF,endColorstr=#C0FFFFFF); 
+}
+
+.transparent_white85 {
+  color: black;
+  background: rgb(255,255,255);  
+  background: transparent\9;  
+  background:rgba(255,255,255,.85);  
   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#C0FFFFFF,endColorstr=#C0FFFFFF); 
 }
 
@@ -137,10 +163,120 @@ h1,h2,h3,h4,h5,h6 {
   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#C0000000,endColorstr=#C0000000); 
 }
 
+.transparent_black85 {
+  color: white;
+  background: rgb(0,0,0);  
+  background: transparent\9;  
+  background:rgba(0,0,0,0.85);  
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#D8000000,endColorstr=#D8000000); 
+}
+
 .transparent_black95 {
   color: white;
   background: rgb(0,0,0);  
   background: transparent\9;  
   background:rgba(0,0,0,0.95);  
-  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#C0000000,endColorstr=#C0000000); 
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#F2000000,endColorstr=#F2000000); 
+}
+
+
+/* BUTTONS */
+
+
+/* ========= ag-btn-panel-default ========== */
+
+.btn-ag-panel-default { 
+  color: #C2C2C2; 
+  background-color: #2C2C2C; 
+  border-color: #000000; 
+} 
+ 
+.btn-ag-panel-default:hover, 
+.btn-ag-panel-default:focus, 
+.btn-ag-panel-default:active, 
+.btn-ag-panel-default.active, 
+.open .dropdown-toggle.btn-ag-panel-default { 
+  color: #C2C2C2; 
+  background-color: #000000; 
+  border-color: #000000; 
+} 
+ 
+.btn-ag-panel-default:active, 
+.btn-ag-panel-default.active, 
+.open .dropdown-toggle.btn-ag-panel-default { 
+  background-image: none; 
+} 
+ 
+.btn-ag-panel-default.disabled, 
+.btn-ag-panel-default[disabled], 
+fieldset[disabled] .btn-ag-panel-default, 
+.btn-ag-panel-default.disabled:hover, 
+.btn-ag-panel-default[disabled]:hover, 
+fieldset[disabled] .btn-ag-panel-default:hover, 
+.btn-ag-panel-default.disabled:focus, 
+.btn-ag-panel-default[disabled]:focus, 
+fieldset[disabled] .btn-ag-panel-default:focus, 
+.btn-ag-panel-default.disabled:active, 
+.btn-ag-panel-default[disabled]:active, 
+fieldset[disabled] .btn-ag-panel-default:active, 
+.btn-ag-panel-default.disabled.active, 
+.btn-ag-panel-default[disabled].active, 
+fieldset[disabled] .btn-ag-panel-default.active { 
+  background-color: #2C2C2C; 
+  border-color: #000000; 
+} 
+ 
+.btn-ag-panel-default .badge { 
+  color: #2C2C2C; 
+  background-color: #C2C2C2; 
+}
+
+
+/* ========= ag-btn-panel-selected ========== */
+
+.btn-ag-panel-selected { 
+  color: #FF7F2A; 
+  background-color: #2C2C2C; 
+  border-color: #000000; 
+  font-weight: bold;
+} 
+ 
+.btn-ag-panel-selected:hover, 
+.btn-ag-panel-selected:focus, 
+.btn-ag-panel-selected:active, 
+.btn-ag-panel-selected.active, 
+.open .dropdown-toggle.btn-ag-panel-selected { 
+  color: #FF7F2A; 
+  background-color: #000000; 
+  border-color: #000000; 
+} 
+ 
+.btn-ag-panel-selected:active, 
+.btn-ag-panel-selected.active, 
+.open .dropdown-toggle.btn-ag-panel-selected { 
+  background-image: none; 
+} 
+ 
+.btn-ag-panel-selected.disabled, 
+.btn-ag-panel-selected[disabled], 
+fieldset[disabled] .btn-ag-panel-selected, 
+.btn-ag-panel-selected.disabled:hover, 
+.btn-ag-panel-selected[disabled]:hover, 
+fieldset[disabled] .btn-ag-panel-selected:hover, 
+.btn-ag-panel-selected.disabled:focus, 
+.btn-ag-panel-selected[disabled]:focus, 
+fieldset[disabled] .btn-ag-panel-selected:focus, 
+.btn-ag-panel-selected.disabled:active, 
+.btn-ag-panel-selected[disabled]:active, 
+fieldset[disabled] .btn-ag-panel-selected:active, 
+.btn-ag-panel-selected.disabled.active, 
+.btn-ag-panel-selected[disabled].active, 
+fieldset[disabled] .btn-ag-panel-selected.active { 
+  background-color: #2C2C2C; 
+  border-color: #000000; 
+} 
+ 
+.btn-ag-panel-selected .badge { 
+  color: #2C2C2C; 
+  background-color: #FF7F2A; 
 }
