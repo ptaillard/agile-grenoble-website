@@ -123,6 +123,14 @@ h1,h2,h3,h4,h5,h6 {
   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#80FFFFFF,endColorstr=#80FFFFFF); 
 }
 
+.transparent_white65 {
+  color: black;
+  background: rgb(255,255,255);  
+  background: transparent\9;  
+  background:rgba(255,255,255,.5);  
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#A6FFFFFF,endColorstr=#A6FFFFFF); 
+}
+
 .transparent_white75 {
   color: black;
   background: rgb(255,255,255);  
@@ -153,6 +161,14 @@ h1,h2,h3,h4,h5,h6 {
   background: transparent\9;  
   background:rgba(0,0,0,0.5);  
   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#80000000,endColorstr=#80000000); 
+}
+
+.transparent_black65 {
+  color: white;
+  background: rgb(0,0,0);  
+  background: transparent\9;  
+  background:rgba(0,0,0,0.65);  
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#A6000000,endColorstr=#A6000000); 
 }
 
 .transparent_black75 {

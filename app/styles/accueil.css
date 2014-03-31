@@ -33,7 +33,7 @@
 .btn-ag-orateur { 
   color: #FFFFFF; 
   background-color: #FF2525; 
-  border-color: #521919; 
+  border-color: #FF2525; 
 } 
  
 .btn-ag-orateur:hover, 
@@ -43,7 +43,7 @@
 .open .dropdown-toggle.btn-ag-orateur { 
   color: #FFFFFF; 
   background-color: #C21D1D; 
-  border-color: #521919; 
+  border-color: #C21D1D; 
 } 
  
 .btn-ag-orateur:active, 
@@ -68,7 +68,7 @@ fieldset[disabled] .btn-ag-orateur:active,
 .btn-ag-orateur[disabled].active, 
 fieldset[disabled] .btn-ag-orateur.active { 
   background-color: #FF2525; 
-  border-color: #521919; 
+  border-color: #FF2525; 
 } 
  
 .btn-ag-orateur .badge { 
@@ -79,7 +79,7 @@ fieldset[disabled] .btn-ag-orateur.active {
 .btn-ag-participant { 
   color: #FFFFFF; 
   background-color: #138123; 
-  border-color: #09290E; 
+  border-color: #138123; 
 } 
  
 .btn-ag-participant:hover, 
@@ -89,7 +89,7 @@ fieldset[disabled] .btn-ag-orateur.active {
 .open .dropdown-toggle.btn-ag-participant { 
   color: #FFFFFF; 
   background-color: #0C5917; 
-  border-color: #09290E; 
+  border-color: #0C5917; 
 } 
  
 .btn-ag-participant:active, 
@@ -114,7 +114,7 @@ fieldset[disabled] .btn-ag-participant:active,
 .btn-ag-participant[disabled].active, 
 fieldset[disabled] .btn-ag-participant.active { 
   background-color: #138123; 
-  border-color: #09290E; 
+  border-color: #138123; 
 } 
  
 .btn-ag-participant .badge { 
@@ -125,7 +125,7 @@ fieldset[disabled] .btn-ag-participant.active {
 .btn-ag-sponsor { 
   color: #FFFFFF; 
   background-color: #1B5BBB; 
-  border-color: #0A1F3D; 
+  border-color: #1B5BBB; 
 } 
  
 .btn-ag-sponsor:hover, 
@@ -135,7 +135,7 @@ fieldset[disabled] .btn-ag-participant.active {
 .open .dropdown-toggle.btn-ag-sponsor { 
   color: #FFFFFF; 
   background-color: #174487; 
-  border-color: #0A1F3D; 
+  border-color: #174487; 
 } 
  
 .btn-ag-sponsor:active, 
@@ -160,7 +160,7 @@ fieldset[disabled] .btn-ag-sponsor:active,
 .btn-ag-sponsor[disabled].active, 
 fieldset[disabled] .btn-ag-sponsor.active { 
   background-color: #1B5BBB; 
-  border-color: #0A1F3D; 
+  border-color: #1B5BBB; 
 } 
  
 .btn-ag-sponsor .badge { 
