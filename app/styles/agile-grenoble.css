@@ -217,7 +217,7 @@ h1,h2,h3,h4,h5,h6 {
 .btn-ag-panel-default.active, 
 .open .dropdown-toggle.btn-ag-panel-default { 
   color: #C2C2C2; 
-  background-color: #000000; 
+  background-color: #1F1E1E; 
   border-color: #000000; 
 } 
  
@@ -258,7 +258,6 @@ fieldset[disabled] .btn-ag-panel-default.active {
   color: #FF7F2A; 
   background-color: #2C2C2C; 
   border-color: #000000; 
-  font-weight: bold;
 } 
  
 .btn-ag-panel-selected:hover, 
@@ -267,7 +266,6 @@ fieldset[disabled] .btn-ag-panel-default.active {
 .btn-ag-panel-selected.active, 
 .open .dropdown-toggle.btn-ag-panel-selected { 
   color: #FF7F2A; 
-  background-color: #000000; 
   border-color: #000000; 
 } 
  
