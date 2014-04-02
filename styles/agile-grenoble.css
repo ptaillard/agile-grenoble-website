@@ -23,21 +23,27 @@ body, html {
 }
 
 .content {
-	padding-top: 90px;
+	padding-top: 80px;
 	height: 100%;
 	overflow: hidden;
 }
 
+/* Social network links */
 #socialnetwork {
   position: fixed;
   padding:5px;
-  top: 90px;
+  top: 80px;
   right: 0px;
   z-index: 2000;
 }
 
 #socialnetwork img {
   padding-top:5px;
+  opacity:0.8;
+}
+
+#socialnetwork img:hover {
+  opacity:1.0;
 }
 
 
