@@ -71,11 +71,26 @@
               ownerurl:'http://www.camptocamp.org/users/202842',
               licencename:'CC-by-SA',
               licenceurl:'http://creativecommons.org/licenses/by-sa/3.0/deed.fr'              
+              },
+              {
+              photourl:'http://www.camptocamp.org/images/378896/fr/grenoble-sous-les-etoiles',
+              desc: 'Grenoble sous les étoiles',
+              ownername:'Benoit Audige',
+              ownerurl:'http://www.camptocamp.org/users/11491',
+              licencename:'CC-by-SA',
+              licenceurl:'http://creativecommons.org/licenses/by-sa/3.0/deed.fr'              
+              },
+              {
+              photourl:'http://www.camptocamp.org/images/241031/fr/un-matin-au-mont-rose',
+              desc: 'Un matin au mont rose',
+              ownername:'Jean-Louis Decosse',
+              ownerurl:'http://www.camptocamp.org/users/13874',
+              licencename:'CC-by-SA',
+              licenceurl:'http://creativecommons.org/licenses/by-sa/3.0/deed.fr'              
               }]" >                   
               <span class="glyphicon glyphicon-copyright-mark"></span>
-              2014 Club Agile Rhône Alpes - Crédits Photos :             
-              <span ng-repeat="credit in credits">
-                <span class="glyphicon glyphicon-picture"></span>
+              2014 Club Agile Rhône Alpes - Crédits Photos: 
+              <span ng-repeat="credit in credits">                
                 <a href="{{credit.photourl}}" target="blank_">{{credit.desc}}</a>
                  de <a href="{{credit.ownername}}" target="blank_">{{credit.ownername}}</a>
                   sous <a href="{{credit.licenceurl}}" target="blank_">licence {{credit.licencename}}</a>.
