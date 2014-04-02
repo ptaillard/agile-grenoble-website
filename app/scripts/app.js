@@ -1,4 +1,4 @@
-var AgileGrenobleApp = angular.module('AgileGrenobleApp', ['ngRoute', 'ui.bootstrap', 'ui.utils'])
+var AgileGrenobleApp = angular.module('AgileGrenobleApp', ['directives.skrollr', 'angularSmoothscroll', 'ngRoute', 'ui.bootstrap', 'ui.utils'])
 	.controller('AgileGrenobleCtrl', function($scope) {
 
 })

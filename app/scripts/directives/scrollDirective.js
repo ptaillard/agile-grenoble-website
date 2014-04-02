@@ -1,12 +1,20 @@
-var AgileGrenobleApp = AgileGrenobleApp || {};
-AgileGrenobleApp.directive('compileCallback',function(){
-	  return {
-	    priority: 1001, // make sure it's the last to run
-	    scope : {
-	       compileCallback: "&"
-	    },
-	    link: function ($scope){
-	      	$scope.compileCallback();
-	    }
-	  }
-});
+angular.module('directives.skrollr', [])
+	.directive('skrollr', [function() {
+    var directiveDefinitionObject = {
+      link: function() {
+        skrollr.init({
+		    forceHeight: false,
+		    smoothScrolling:true,
+		    render: function(data) {              
+		      //Debugging - Log the current scroll position.
+		      //console.log(data.curTop);
+		    },
+		    mobileCheck: function() {
+		      return false;
+		    }
+		  });
+      }
+    };
+
+    return directiveDefinitionObject;
+  }]);

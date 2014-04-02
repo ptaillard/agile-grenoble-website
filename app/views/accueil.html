@@ -2,7 +2,7 @@
   <div class="row hidden-xs">
     <div class="col-md-12">
 
-      <div class="panel panel-default transparent_black65" data-start=" transform: scale(1.0); opacity:1.0;"
+      <div skrollr class="panel panel-default transparent_black65" data-start=" transform: scale(1.0); opacity:1.0;"
             data-500-start="opacity:0; transform: scale(0.25);">
           <div class="panel-body">
           <h1 class="ag-section-title">Agile Grenoble 2014</h1>              
@@ -31,7 +31,7 @@
         <p>
           Vous êtes une entreprise qui souhaitent soutenir la conférence at associer son nom à l'une des plus importante conférence agile en France?
         </p>
-        <a ng-href="#{{menuselected}}" ng-click="menuselected = 'sponsors'" class="btn btn-primary btn-lg btn-ag-sponsor">
+        <a smooth-scroll-jquery target="sponsors" offset="0" ng-click="menuselected = 'sponsors'" class="btn btn-primary btn-lg btn-ag-sponsor">
         <span class="glyphicon glyphicon-hand-right"></span>
         Accès Sponsors
         </a>
@@ -48,7 +48,7 @@
         <p>
           Vous êtes passionné et vous souhaitez partager votre expérience et vos idées sur l'agilité avec les participants de la conférence?
         </p>
-        <a ng-href="#{{menuselected}}" ng-click="menuselected = 'orateurs'" class="btn btn-primary btn-lg btn-ag-orateur">
+        <a smooth-scroll-jquery target="orateurs" offset="0" ng-click="menuselected = 'orateurs'" class="btn btn-primary btn-lg btn-ag-orateur">
         <span class="glyphicon glyphicon-hand-right"></span>
         Accès Orateurs
         </a>
@@ -63,7 +63,7 @@
         <h1 class="ag-participant-text"><img src="images/media/icon_green_ticket.png" alt="" width="64px"> Participants</h1>
         <p> Vous souhaitez participer à la conférence et vous voulez en savoir plus sur les détails pratiques et le programme ce celle-ci?
         </p>
-        <a ng-href="#{{menuselected}}" ng-click="menuselected = 'participants'" class="btn btn-primary btn-lg btn-ag-participant">
+        <a smooth-scroll-jquery target="participants" offset="0" ng-click="menuselected = 'participants'" class="btn btn-primary btn-lg btn-ag-participant">
         <span class="glyphicon glyphicon-hand-right"></span>
         Accès Participants
         </a>

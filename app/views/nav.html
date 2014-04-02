@@ -18,23 +18,23 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
-         <li ng-class="{active: menuselected == 'accueil'}">
-              <a ng-href="#{{menuselected}}" ng-click="menuselected = 'accueil'">Accueil</a>
+         <li smooth-scroll-jquery target="accueil" offset="0" ng-class="{active: menuselected == 'accueil'}" ng-click="menuselected = 'accueil'">
+              <a>Accueil</a>
           </li>
-          <li ng-class="{active: menuselected == 'keynotes'}">
-              <a ng-href="#{{menuselected}}" ng-click="menuselected = 'keynotes'">Keynotes</a>
+          <li smooth-scroll-jquery target="keynotes" offset="0" ng-class="{active: menuselected == 'keynotes'}" ng-click="menuselected = 'keynotes'">
+            <a>Keynotes</a>
           </li>
-          <li ng-class="{active: menuselected == 'sponsors'}">
-              <a ng-href="#{{menuselected}}" ng-click="menuselected = 'sponsors'">Sponsors</a>
+          <li smooth-scroll-jquery target="sponsors" offset="0" ng-class="{active: menuselected == 'sponsors'}" ng-click="menuselected = 'sponsors'" >
+              <a>Sponsors</a>
           </li>
-          <li ng-class="{active: menuselected == 'orateurs'}">
-              <a ng-href="#{{menuselected}}" ng-click="menuselected = 'orateurs'">Orateurs</a>
+          <li smooth-scroll-jquery target="orateurs" offset="0" ng-class="{active: menuselected == 'orateurs'}" ng-click="menuselected = 'orateurs'">
+              <a>Orateurs</a>
           </li>
-          <li ng-class="{active: menuselected == 'participants'}">
-              <a ng-href="#{{menuselected}}" ng-click="menuselected = 'participants'">Participants</a>
+          <li smooth-scroll-jquery target="participants" offset="0" ng-class="{active: menuselected == 'participants'}" ng-click="menuselected = 'participants'">
+              <a>Participants</a>
           </li>
-          <li ng-class="{active: menuselected == 'apropos'}">
-              <a ng-href="#{{menuselected}}" ng-click="menuselected = 'apropos'">A propos</a>
+          <li smooth-scroll-jquery target="apropos" offset="0" ng-class="{active: menuselected == 'apropos'}" ng-click="menuselected = 'apropos'">
+              <a>A propos</a>
           </li>
         </ul>
       <!--div>  
