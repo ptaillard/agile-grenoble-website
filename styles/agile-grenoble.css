@@ -101,7 +101,7 @@ h1,h2,h3,h4,h5,h6 {
 /* ========= panels ========= */
 
 .ag-section-title  {
-  color :#FF7F2A;
+  color :#00b8fc;
 
 }
 
@@ -261,7 +261,7 @@ fieldset[disabled] .btn-ag-panel-default.active {
 /* ========= ag-btn-panel-selected ========== */
 
 .btn-ag-panel-selected { 
-  color: #FF7F2A; 
+  color: #00b8fc; 
   background-color: #2C2C2C; 
   border-color: #000000; 
 } 
@@ -271,7 +271,7 @@ fieldset[disabled] .btn-ag-panel-default.active {
 .btn-ag-panel-selected:active, 
 .btn-ag-panel-selected.active, 
 .open .dropdown-toggle.btn-ag-panel-selected { 
-  color: #FF7F2A; 
+  color: #00b8fc; 
   border-color: #000000; 
 } 
  
@@ -302,5 +302,5 @@ fieldset[disabled] .btn-ag-panel-selected.active {
  
 .btn-ag-panel-selected .badge { 
   color: #2C2C2C; 
-  background-color: #FF7F2A; 
+  background-color: #00b8fc; 
 }
