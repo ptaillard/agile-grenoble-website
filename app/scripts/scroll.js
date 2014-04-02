@@ -1,4 +1,3 @@
- // Start Skrollr
 window.onload = function() {
   var s = skrollr.init(
   {
@@ -25,4 +24,4 @@ window.onload = function() {
       }
     }
   });
-}
+};
