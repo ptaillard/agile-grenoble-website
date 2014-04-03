@@ -26,6 +26,7 @@
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
   color: #B0B0B0;
   border-bottom: 3px #B0B0B0 solid;
+  cursor: pointer;
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
   color: #00b8fc;
